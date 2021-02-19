@@ -1,4 +1,4 @@
-# video-player 만들기 
+# video-player 만들기 (1)
 ## html, javascript
 ---
 
