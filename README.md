@@ -40,3 +40,20 @@ video.addEventListener("click", (e) => {
 
 play.addEventListener("click", toggleVideoStatus);
 ```
+
+4️⃣ 재생 버튼을 한 번 더 누르면 일시정지 버튼으로 toggle되는 기능
+
+일시정지 아이콘 ➡ `<i class="fa fa-pause fa-2x"></i>`
+
+```js
+function updatePlayIcon() {
+    if (video.paused) {
+        play.innerHTML = '<i class="fa fa-play fa-2x"></i>';
+    } else {
+        play.innerHTML = '<i class="fa fa-pause fa-2x"></i>';
+    }
+}
+
+video.addEventListener("pause", updatePlayIcon);
+video.addEventListener("play", updatePlayIcon);
+```
